@@ -1,5 +1,3 @@
-/*Lex program to calculate vowel and consonanat*/
-
 %{
 	#include <stdio.h>
 	int pos_int = 0;
@@ -12,10 +10,10 @@
 digit [0-9]
 
 %%
-\+?{digit}+ 	{pos_int++;}
--{digit}+ 	{neg_int++;}
-\+?{digit}*\.{digit}+	{pos_float++;}
--{digit}*\.{digit}+		{neg_float++;}
+^\+?{digit}+$ 	{pos_int++;}
+^-{digit}+$ 	{neg_int++;}
+^\+?{digit}*\.{digit}+$	{pos_float++;}
+^-{digit}*\.{digit}+$		{neg_float++;}
 %%
 
 main()
