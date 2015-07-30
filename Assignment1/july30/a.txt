@@ -1,2 +1,4 @@
 My name is arijit das.123456789
 
+[A-Za-z!@#$\%^&;\*\\]+|[a-z!@#$\%^&;\*\\]+|[A-Za-z!@#$\%^&;\*\\][0-9]* {nword++; nchar += yyleng;}
+
