@@ -7,7 +7,6 @@
 %%
 (.*)printf(.*) {print++; fprintf(yyout, "write");}
 (.*)scanf(.*) {scan++; fprintf(yyout, "read");}
-
 (.*) {fprintf(yyout, "%s",yytext);}
 
 %%

@@ -5,8 +5,10 @@
 %}
 
 %%
+[\n\t ]
 printf {print++;}
 scanf {scan++;}
+.
 %%
 
 int main(int argc, char const *argv[])

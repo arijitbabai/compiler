@@ -6,7 +6,7 @@
 %}
 
 %%
-^[a-z]+_([a-z]|[0-9])*$ {identifier++;}
+^[A-Za-z]+[_]*([A-Za-z]|[0-9])*$ {identifier++;}
 %%
 
 main()
