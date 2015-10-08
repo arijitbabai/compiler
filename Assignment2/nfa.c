@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void main(void){
-	int a[10],t[10][10],i,j,ns,ni;
+	int a[10],t[10][10][10],i,j,ns,ni;
 	char in[10];
 	printf("Enter the no. of states : ");
 	scanf("%d",&ns);
@@ -30,11 +30,13 @@ void main(void){
 	for(i = 0 ; i < ni ; i++){
 		scanf("%c",&in[i]);
 	}
-
+	int nt,k;
 	for(i = 0 ; i < ns ; i++){
 		for(j = 0 ; j < ni ; j++){
-			printf("Enter the transition for (%d,%c) -> ",a[i],in[j]);
-			scanf("%d",&t[i][j]);
+			printf("Enter the no. of transition for (%d,%c) -> ",&nt);
+			for(k = 0 ; k < nt ; k++){
+				scanf("%d",&t[i][j]);
+			}
 		}
 	}
 
