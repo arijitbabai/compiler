@@ -49,6 +49,9 @@ void main(void){
 			scanf("%d",&t[i][j]);
 		}
 	}
+	int state[ns - nf];
+	
+
 
 	// printf("\nStates\t");
 	// for(i = 0 ; i < ni ; i++){
@@ -85,6 +88,7 @@ void main(void){
 		}
 		printf("\n");
 	}
+
 
 	return;
 }
